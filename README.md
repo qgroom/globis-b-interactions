@@ -8,6 +8,6 @@ Use ```make``` to reproduce the data.
  * [`dataset_stats.tsv`](./dataset_stats.tsv) - datasets by number of taxa, number of interactions and format (single table, multi-table, rdf, json, dwca)
 
 ## graphs
-* [`datasets_stats.png`](./datasets_stats.png) - log-log graph showing the relationship between number of taxa, number of interactions and formats of interaction datasets in GloBI.
+* [`dataset_stats.png`](./dataset_stats.png) - log-log graph showing the relationship between number of taxa, number of interactions and formats of interaction datasets in GloBI.
 
 
