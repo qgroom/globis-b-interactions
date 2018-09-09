@@ -1,0 +1,147 @@
+abarner/template-dataset	globi	single table
+arw36/species-interaction-dataset-inventory	globi	single table
+cmungall/Benesh-et-al-2017	globi	single table
+cmungall/dinosaur-biotic-interactions	globi	single table
+diatomsRcool/greenland_interactions	globi	single table
+diatomsRcool/yellowstone_grizzly	globi	single table
+Dryu0003/dietdatabase	hurlbert	single table
+EOL/pseudonitzchia	globi	single table
+fgabriel1891/Palm-Frugivore_Interactions_Neo-Afrotropics	globi	single table
+fgabriel1891/Plant-Frugivore-Interactions-SouthEastAsia	globi	single table
+globalbioticinteractions/AfricaTreeDatabase	globi	single table
+globalbioticinteractions/aps	globi	single table
+globalbioticinteractions/aps-turfgrasses	globi	single table
+globalbioticinteractions/arthropodEasyCaptureAMNH	arthropodEasyCapture	dwca
+globalbioticinteractions/barnes	barnes	multi-table
+globalbioticinteractions/bell	bell	single table
+globalbioticinteractions/bello2017	globi	single table
+globalbioticinteractions/bioinfo	bioinfo	multi-table
+globalbioticinteractions/brose	brose	multi-table
+globalbioticinteractions/byrnes	byrnes	multi-table
+globalbioticinteractions/caps-pest-lists	globi	single table
+globalbioticinteractions/Catalogue-of-Afrotropical-Bees	coetzer	dwca
+globalbioticinteractions/choy2017	globi	single table
+globalbioticinteractions/cook	cook	single table
+globalbioticinteractions/cruaud	cruaud	single table
+globalbioticinteractions/dunne2016SanakIntertidal	dunne	multi-table
+globalbioticinteractions/dunne2016SanakNearshore	dunne	multi-table
+globalbioticinteractions/ferrer-paris	ferrer-paris	single table
+globalbioticinteractions/fishbase	fishbase	multi-table
+globalbioticinteractions/gemina	gemina	single table
+globalbioticinteractions/globalwebdb	globalwebdb	single table
+globalbioticinteractions/gray2015	gray	single table
+globalbioticinteractions/hafner	hafner	single table
+globalbioticinteractions/hechinger2011	hechinger	multi-table
+globalbioticinteractions/ices	ices	single table
+globalbioticinteractions/inaturalist	inaturalist	json
+globalbioticinteractions/jsonld-template-dataset	globi	rdf
+globalbioticinteractions/kelpforest	kelpforest	multi-table
+globalbioticinteractions/known-projects	globi	single table
+globalbioticinteractions/life-watch-greece	life-watch-greece	single table
+globalbioticinteractions/lupinus-nipomensis-interactions-2017	globi	single table
+globalbioticinteractions/mouritsen2011	hechinger	multi-table
+globalbioticinteractions/natural-history-museum-london-interactions-bank	globi	single table
+globalbioticinteractions/noaa-reem	globi	single table
+globalbioticinteractions/phi-base-data	globi	single table
+globalbioticinteractions/planque2014	planque	multi-table
+globalbioticinteractions/preston2012	hechinger	multi-table
+globalbioticinteractions/raymond	raymond	multi-table
+globalbioticinteractions/robledo	robledo	single table
+globalbioticinteractions/roopnarine	roopnarine	single table
+globalbioticinteractions/saito2016	globi	single table
+globalbioticinteractions/saproxylic	saproxylic	multi-table
+globalbioticinteractions/sealifebase	fishbase	multi-table
+globalbioticinteractions/siad	siad	single table
+globalbioticinteractions/species-interaction-dataset-inventory	globi	single table
+globalbioticinteractions/spire	spire	rdf
+globalbioticinteractions/strona	strona	single table
+globalbioticinteractions/szoboszlai2015	szoboszlai	multi-table
+globalbioticinteractions/template-dataset	globi	single table
+globalbioticinteractions/thieltges2011	hechinger	multi-table
+globalbioticinteractions/web-of-life	web-of-life	multi-table
+globalbioticinteractions/wood2015	wood	single table
+globalbioticinteractions/zander2011	hechinger	multi-table
+globi.namespace	globi.format	type
+GoMexSI/abascal	gomexsi	multi-table
+GoMexSI/akin	akin	multi-table
+GoMexSI/baremore	baremore	single table
+GoMexSI/blewett	blewett	multi-table
+GoMexSI/interaction-data	gomexsi	multi-table
+GoMexSI/simons	simons	single table
+GoMexSI/wrast	wrast	multi-table
+holmesjtg/okaloosa-county-coastal-uplands	globi	single table
+hurlbertlab/dietdatabase	hurlbert	single table
+jhammock/Layman-and-Allgeier-Lionfish	globi	single table
+jhpoelen/data	globi	single table
+jhpoelen/geosymbio	globi	single table
+jhpoelen/uredinales-belgium-checklist	globi	single table
+KatjaSchulz/dinosaur-biotic-interactions	globi	single table
+kinseyfish/dietdatabase	hurlbert	single table
+mangal-wg/template-dataset	globi	single table
+millerse/Adams-et-al.-2016	globi	single table
+millerse/A-Host-parasite-Catalog-of-North-American-Tachinidae-Diptera-	globi	single table
+millerse/Aluja-et-al-New-Host-Plant-and-Distribution-Records-in-Mexico	globi	single table
+millerse/Amphibians-and-Reptiles-Predators-and-Prey.-Amphibians-and-Birds	globi	single table
+millerse/Anemonefish	globi	single table
+millerse/Ant-Plant-Interactions	globi	single table
+millerse/Arctic-food-web	globi	single table
+millerse/Arctos	globi	single table
+millerse/Bald-Eagle-Diet	globi	single table
+millerse/Bascompte-J.-Meli-n-C.J.-and-Sala-E.-2005	globi	single table
+millerse/Bat-flies	globi	single table
+millerse/Benesh-et-al-2017	globi	single table
+millerse/BHL-Interactions	globi	single table
+millerse/Biological-Station-Arthropod-Collection	globi	single table
+millerse/Bird-Parasite	globi	single table
+millerse/Birds-Consumed-by-the-Invasive-Burmese-Python-Python-molurus-bivittatus-	globi	single table
+millerse/Buprestidae-of-North-America	globi	single table
+millerse/Canadian-freshwater-fish-and-their-metazoan-parasites	globi	single table
+millerse/Carpinteria-Salt-Marsh-Web	globi	single table
+millerse/Checklist-of-Micro-Organisms-Associated-With-Tree-Seeds-in-the-World	globi	single table
+millerse/Clements-R.-E.-and-F.-L.-Long	globi	single table
+millerse/Coccidae-of-Egypt	globi	single table
+millerse/Dapstrom-integrated-database-and-portal-for-fish-stomach-records	globi	single table
+millerse/Diseases-of-Coffee-in-Porto-Rico	globi	single table
+millerse/Ecological-Database-of-the-World-s-Insect-Pathogens	globi	single table
+millerse/Feeding-Niches-of-Hummingbirds-in-a-Trinidad-Valley	globi	single table
+millerse/Fishes-of-Basrah-Province-Iraq	globi	single table
+millerse/Flea-Collection	globi	single table
+millerse/Flowers-and-insects-lists-of-visitors-to-four-hundred-and-fifty-three-flowers	globi	single table
+millerse/Fly-parasites	globi	single table
+millerse/Fossil-snake	globi	single table
+millerse/grazers-of-North-American-aquatic-plants	globi	single table
+millerse/Greystock-et-al.-2015	globi	single table
+millerse/Host-plant-and-distribution-records	globi	single table
+millerse/Hummingbird-and-Flower-Interactions	globi	single table
+millerse/Insect-Herbivores-on-Goldenrods-Solidago-altissima	globi	single table
+millerse/Interaction-data-by-SEM	globi	single table
+millerse/Jstor-Collecton	globi	single table
+millerse/Lara-C.-2006	globi	single table
+millerse/Lice	globi	single table
+millerse/Lichenous	globi	single table
+millerse/parasitic-plant-connection	globi	single table
+millerse/Plant-ant-webs	globi	single table
+millerse/Plant-Disease-Survey	globi	single table
+millerse/Plant-Herbivore-Web	globi	single table
+millerse/Plant-Pollinator-Web	globi	single table
+millerse/PLANT-SEED-DISPERSER-WEBS	globi	single table
+millerse/Pollination-Collection	globi	single table
+millerse/Seaweed	globi	single table
+millerse/Serengeti	globi	single table
+millerse/Seton-1929	globi	single table
+millerse/Smithsonian-Repository-Interactions	globi	single table
+millerse/The-Butterflies-of-North-America	globi	single table
+millerse/US-National-Parasite-Collection	globi	single table
+millerse/Wardeh-et-al.-2015	globi	single table
+millerse/Weidinger-et-al.-2009	globi	single table
+millerse/Wenzel-Tipton-Classified-List-of-Hosts-and-Parasites	globi	single table
+millerse/Wharton-and-Marsh-1978.-New-World-Opiinae	globi	single table
+millerse/Zika-Virus	globi	single table
+NASUA/ZalophusPredatoryInteractions	globi	single table
+ParasiteTracker/vampire-moths-and-their-fruit-piercing-relatives-Occurrence-Records	globi	single table
+PHI-base/data	globi	single table
+seltmann/ParasiteTracker-Globi	globi	single table
+seltmann/template-dataset	globi	single table
+seltmann/vampire-moth-globi	globi	single table
+seltmann/vampire-moths-and-their-fruit-piercing-relatives	globi	single table
+tkuhn/template-dataset	globi	single table

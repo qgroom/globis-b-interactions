@@ -1,0 +1,6 @@
+start dataset = node:datasets('*:*' ), report = node:reports('sourceId:*') 
+where 'globi:' + dataset.namespace = report.sourceId
+with report, dataset
+match dataset<-[:IN_DATASET]-study
+where has(study.source)
+return distinct(study.source), dataset.namespace, report.nTaxa, report.nInteractions, report.sourceId, dataset.citation, dataset.format, dataset.archiveURI, dataset.lastSeenAt
