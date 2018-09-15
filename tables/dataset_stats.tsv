@@ -1,3 +1,4 @@
+n_interactions	n_taxa	format	citation	namespace	dateAccessed
 504260	19506	multi-table	Froese, R. and D. Pauly. Editors. 2016. FishBase. World Wide Web electronic publication. www.fishbase.org, version (10/2016).	globalbioticinteractions/fishbase	2018-09-10T22:10:53.477Z
 350213	9579	dwca	no citation	globalbioticinteractions/arthropodEasyCaptureAMNH	2018-09-10T22:06:45.827Z
 271904	14871	single table	Sarah E Miller. 4/18/2016. Species associations from Wardeh, M. et al. Database of host-pathogen and related species interactions, and their global distribution. Sci. Data 2:150049 doi: 10.1038/sdata.2015.49 (2015)	millerse/Wardeh-et-al.-2015	2018-09-10T22:59:31.079Z
