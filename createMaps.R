@@ -60,8 +60,8 @@ plotMap <- function(lat_range = c(-90, 90),
     lng_lat <- lng_lat + scale_y_continuous(limits = lat_range);
 
     blank_plot <- ggplot() + geom_blank(aes(1,1))
-    blank_plot <- blank_plot + annotate("text", x = 15, y = 20, label = "<-- time", hjust = 1)
-    blank_plot <- blank_plot + annotate("text", x = 20, y = 15, label = "time --> ", angle = -90, hjust=-1)
+    blank_plot <- blank_plot + annotate("text", x = 15, y = 20, label = "time -->", hjust = 1)
+    blank_plot <- blank_plot + annotate("text", x = 20, y = 15, label = "<-- time", angle = -90, hjust=-1)
     blank_plot <- blank_plot + theme_nothing()
 
     grid.arrange(lat_time, lng_lat, blank_plot, lng_time, ncol=2, nrow=2, top = title)
