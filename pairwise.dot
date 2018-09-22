@@ -1,0 +1,11 @@
+digraph pairwise {
+    rankdir=LR;
+    labelloc="t";
+    label="pairwise interaction";
+    a [label="sea otter"];
+    b [label="crab"];
+
+    a -> b [label="ate"];
+
+}
+

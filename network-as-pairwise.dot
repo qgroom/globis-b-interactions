@@ -1,0 +1,56 @@
+digraph pairwise {
+    rankdir=LR;
+    labelloc="t";
+    label="a network consists of\npairwise interactions";
+    
+    a0 [label="kelp"];
+    a1 [label="kelp"];
+    
+    b0 [label="sea otter"];
+    b1 [label="sea otter"];
+    
+    c0 [label="sea urchin"];
+    c1 [label="sea urchin"];
+    
+    empty0 [label="", style = dotted];
+    empty1 [label="", style = dotted];
+
+    subgraph cluster0 {
+      label = "";
+      style = dotted;
+      a0 -> b0 [label="not eatenBy"];
+    }
+
+    subgraph cluster1 {
+      label = "";
+      style = dotted;
+      a1 -> c0 [label="eatenBy"];
+    }
+
+    subgraph cluster2 {
+      label = "";
+      style = dotted;
+      b1 -> c1 [label="eats"];
+    }
+   
+    subgraph cluster3 {
+      label = "";
+      style = dotted;
+      empty0 -> empty1 [label="", style = dotted];
+    }
+
+    n [label="network"]
+
+    a0 -> n [label="partOf"];
+    a1 -> n [label="partOf"];
+    
+    b0 -> n [label="partOf"];
+    b1 -> n [label="partOf"];
+    
+    c0 -> n [label="partOf"];
+    c1 -> n [label="partOf"];
+    
+    empty0 -> n [style=dotted];
+    empty1 -> n [style=dotted];
+}
+

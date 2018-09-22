@@ -1,0 +1,19 @@
+digraph pairwise {
+    #rankdir=LR;
+    labelloc="t";
+    label="complete network";
+    a [label="kelp"];
+    b [label="sea otter"];
+    c [label="sea urchin"];
+    d [label="human"];
+    
+    a -> {b, c, d};
+    b -> {a, c, d};
+    c -> {a, b, d};
+    d -> {a, b, c};
+
+    { rank=same; a b }
+    { rank=same; c d }
+
+}
+

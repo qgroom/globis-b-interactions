@@ -1,0 +1,18 @@
+digraph pairwise {
+    #rankdir=LR;
+    labelloc="t";
+    label="n-ary interaction\nn=3";
+    a [label="mosquito"];
+    b [label="Plasmodium falciparum"];
+    c [label="human"];
+    d [label="malaria infection process"];
+
+    a -> b [label="vectorOf"];
+    b -> c [label="pathogenOf"];
+    a -> c [label="parasiteOf"];
+
+    a -> d [label="participates in"];
+    b -> d [label="participates in"];
+    c -> d [label="participates in"];
+}
+

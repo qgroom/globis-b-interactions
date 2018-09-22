@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 
-figures/map_all.png: tables/dataset_stats.tsv
+figures/map_all.png: tables/dataset_stats.tsv figures/pairwise.png
 	R --no-save < createMaps.R
 
 tables/dataset_stats.tsv:
@@ -14,5 +14,8 @@ tables/dataset_stats.tsv:
 	# add header
 	echo -e "n_interactions\tn_taxa\tformat\tnamespace\tcitation\tdateAccessed" | cat - dataset_stats_no_header.tsv | sed -e 's/"//g' > tables/dataset_stats.tsv
 
-
-
+figures/pairwise.png:
+	dot -Tpng pairwise.dot > figures/pairwise.png
+	dot -Tpng n-ary.dot > figures/n-ary.png
+	dot -Tpng network.dot > figures/network.png
+	dot -Tpng network-as-pairwise.dot > figures/network-as-pairwise.png
