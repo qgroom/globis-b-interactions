@@ -10,11 +10,11 @@ Existing species interaction data models can be categorized in pairwise, n-ary a
 
 ![pairwise](https://raw.githubusercontent.com/jhpoelen/globis-b-interactions/master/figures/pairwise.png)
 
-Pairwise data models describe an interaction as an association between two taxa, two individual organisms or a mix of the two. An example would be the statement: “this sea otter ate that crab”. (e.g., TODO cite fisheries diet databases).
+Pairwise data models describe an interaction as an association between two taxa, two individual organisms or a mix of the two. An example would be the statement: "this sea otter ate that crab". (e.g., TODO cite fisheries diet databases).
 
 ![n-ary](https://raw.githubusercontent.com/jhpoelen/globis-b-interactions/master/figures/n-ary.png)
 
-An n-ary interaction describes 2 or more taxa or individual organisms that interact with each other as part of a process. An example of this is a statement like: “this mosquito is a vector of a Plasmodium falciparum.  P. Falciparum is a pathogen of humans. The mosquito feeds on the blood of humans.” By grouping the various interactions, a process can be described, in this case a malaria infection of humans via mosquitos. (e.g., cite crop diseases, seed dispersal datasets)
+An n-ary interaction describes 2 or more taxa or individual organisms that interact with each other as part of a process. An example of this is a statement like: "this mosquito is a vector of a Plasmodium falciparum.  P. Falciparum is a pathogen of humans. The mosquito feeds on the blood of humans." By grouping the various interactions, a process can be described, in this case a malaria infection of humans via mosquitos. (e.g., cite crop diseases, seed dispersal datasets)
 
 ![network](https://raw.githubusercontent.com/jhpoelen/globis-b-interactions/master/figures/network.png)
 
@@ -22,7 +22,7 @@ Similarly, a network interaction data model captures a complete description of a
 
 Pairwise, n-ary, and network models often use binary absence/presence or ternary (positive/none/negative) measures for each of the possible combinations of the participating species. In other cases, more continuous measures like a relative frequency of occurrence or percentage of diet are used to capture the strength of the interaction between participating taxa (e.g., Avian Diet Database).
 
-In reality, studies often use a mix of the various data models to express the kind of data elements needed to answer specific research questions. For instance, DAPSTOM, a fish diet database, can be interpreted as a trophic network model of commercial fish in the North Sea, as well as pairwise interactions between commercial fish and their stomach content, or even an n-ary interaction that described the “eating” process of a specific fish specimen and the n-1 diets items found in its stomach. Also, the kind of interacting units vary from a general taxon level description (e.g., some cat-like species (Felidae) eat birds) to a specific statement like: “this mountain lion ate that deer” , or a mix of them, like: “this Atlantic Cod ate an arthropod”. 
+In reality, studies often use a mix of the various data models to express the kind of data elements needed to answer specific research questions. For instance, DAPSTOM, a fish diet database, can be interpreted as a trophic network model of commercial fish in the North Sea, as well as pairwise interactions between commercial fish and their stomach content, or even an n-ary interaction that described the "eating" process of a specific fish specimen and the n-1 diets items found in its stomach. Also, the kind of interacting units vary from a general taxon level description (e.g., some cat-like species (Felidae) eat birds) to a specific statement like: "this mountain lion ate that deer" , or a mix of them, like: "this Atlantic Cod ate an arthropod". 
 
 A flexible data model to capture the pairwise, n-ary and network models can be constructed by non-exclusive grouping and nesting of pairwise-wise interactions (reference Dalmas et al. 2018, https://doi.org/10.1111/brv.12433). These pairwise interaction building blocks describe a directional interaction type (e.g., pathogen-host). At each end of the directional interaction, a source and target is identified. This source and target describes the interacting organisms.  The interactions can then be grouped as a process (vector-pathogen-host), by time/location/study (a specific pollinator network constructed by scientists xyz from data obtained at a specific place in time), or spatial domain (a specific group of diet items found in the stomach of a fish). Also, other qualities associated with the interaction (e.g., bibliograph reference, measurement method, evidence type, specimen identifier) can be added. A simplified version of this general model is used by GloBI (and mangal) to integrate the various kind of pairwise, n-ary and network models. 
 
@@ -31,7 +31,7 @@ A flexible data model to capture the pairwise, n-ary and network models can be c
 
 As an example, the figure above shows a traditional network model expressed in a collection of pairwise interactions. A similar exercise can be done for n-ary interactions as well as interaction that are associated with physical specimens, observation time, geospatial coordinates, bibiographic references and dataset provenance. 
 
-Interaction Data Formats
+### Interaction Data Formats
 
 The discussed interaction data models can be recorded, or expressed in, various ways. Before the digital era, natural language, tables and diagrams were used to record species interactions. In the digital era, digital representation of natural language (e.g., a digital file with Spanish text), tables (comma separated values text files, Excel spreadsheets) and diagrams (e.g., bitmap images, vector graphics) are still commonly used. In fact, natural language (aka free form text) and tables in digital form are still the dominant method to capture species interactions (see figure XX). A relatively recent 21st century development are structured text formats like JSON, XML, and RDF. While the nested, pair-wise interaction data model can be expressed in English (as evidenced in this text), tables, and diagrams, formats JSON, XML and RDF seem more suitable **for some** to intuitively capture the complexities of nested, or grouped pairwise interactions and their assocations.
 
@@ -47,18 +47,18 @@ network id | source | interaction type | target
 However, a more intuitive format for some, particularly web developers, may be:
 
 ```json
-“network” : { 
-  “id” : 1
-  “pairs” : [ 
-	{ “source” : “sea urchin”, “interactionType” : “eatenBy”, “target” : “sea otter” },
-	{ “source” : “sea urchin”, “interactionType” : “huntedBy”, “target” : “humans” }
+"network" : { 
+  "id" : 1,
+  "pairs" : [ 
+	{ "source" : "sea urchin", "interactionType" : "eatenBy", "target" : "sea otter" },
+	{ "source" : "sea urchin", "interactionType" : "huntedBy", "target" : "humans" }
   ]
 }
 ```
 
 where the any of the terms (e.g., source, target) may even consist of a nested structure describing the properties of the sea urchin like the taxonomic classification, location, lifestage and body size. 
 
-For a more formal description, the flexible, yet precise, resource definition framework (RDF, https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) can be used in combination with existing ontologies and controlled terms. A relatively “simple” example looks something like:
+For a more formal description, the flexible, yet precise, resource definition framework (RDF, https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/) can be used in combination with existing ontologies and controlled terms. A relatively "simple" example looks something like:
 
 ```
 @prefix this: <http://purl.org/np/RAzquSkwsTAZm61nReG6MOjXEXUx8fNVfdWnAzyn6sOhU> .
