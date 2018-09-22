@@ -1,7 +1,7 @@
 digraph pairwise {
     rankdir=LR;
     labelloc="t";
-    label="a network consists of\npairwise interactions";
+    label="a network as an aggregate of\npairwise interactions";
     
     a0 [label="kelp"];
     a1 [label="kelp"];
