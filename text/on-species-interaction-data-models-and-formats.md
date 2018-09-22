@@ -49,7 +49,7 @@ However, a more intuitive format for some, particularly web developers, may be:
 ```json
 "network" : { 
   "id" : 1,
-  "pairs" : [ 
+  "interactions" : [ 
 	{ "source" : "sea urchin", "interactionType" : "eatenBy", "target" : "sea otter" },
 	{ "source" : "sea urchin", "interactionType" : "huntedBy", "target" : "humans" }
   ]
